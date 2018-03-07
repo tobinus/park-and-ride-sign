@@ -4,8 +4,7 @@ import React from 'react';
 export default function Attributions() {
   return <div>
     <ul>
-      <li>Bus by Dinosoft Labs from the Noun Project</li>
-      <li>Train by Dinosoft Labs from the Noun Project</li>
+      <li>Ingenting &lt;3</li>
     </ul>
   </div>
 }
