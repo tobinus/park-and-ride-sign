@@ -1,0 +1,15 @@
+.occupied {
+    color: red;
+}
+
+.vacant {
+    color: green;
+}
+
+.park-info {
+    /* TODO */
+}
+
+.num-spaces {
+    /* TODO */
+}
