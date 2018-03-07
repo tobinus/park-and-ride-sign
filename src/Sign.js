@@ -35,7 +35,7 @@ class Sign extends Component {
     super(props);
     this.state = {
       departures: departures,
-      parkingSpaces: 36,
+      parkingSpaces: 9,
       name: 'Melhus skysstasjon',
       type: 'train',
     };
@@ -44,8 +44,7 @@ class Sign extends Component {
     return (
       <div className={styles.page}>
         <div className={styles.sign}>
-          <Header name={this.state.name} type={this.state.type}/>
-          <ParkInfo parkingSpaces={this.state.parkingSpaces}/>
+          <Header name={this.state.name} type={this.state.type} parkingSpaces={this.state.parkingSpaces}/>
           <DepartureInfo departures={this.state.departures}/>
         </div>
         <footer className={styles.footer}>

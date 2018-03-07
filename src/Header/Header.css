@@ -1,11 +1,21 @@
 .header {
-    /* TODO */
+    width: 100%;
+    padding: 1em;
+
+    display: flex;
+    align-items: flex-start;
 }
 
 .symbol {
-    /* TODO */
+    width: 1.5em;
+    vertical-align: sub;
+    display: inline-block;
+    margin-right: 0.4em;
 }
 
 .name {
-    /* TODO */
+}
+
+.parking {
+    margin-left: auto;
 }

@@ -8,7 +8,7 @@ export default function ParkInfo({parkingSpaces}) {
   let textClass;
 
   if (parkingSpaces === 0) {
-    counter = '  ';
+    counter = <span>&nbsp;</span>;
     text = 'Fullt';
     textClass = styles.occupied;
   } else {
@@ -19,7 +19,7 @@ export default function ParkInfo({parkingSpaces}) {
   }
 
   return <div className={styles['park-info']}>
-    <img src={parkingIcon} alt="Parkering"/>
+    <img src={parkingIcon} alt="Parkering" className={styles.symbol}/>
     <span className={styles['num-spaces']}>{counter}</span>
     <span className={textClass}>{text}</span>
   </div>;
