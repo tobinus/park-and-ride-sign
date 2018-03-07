@@ -36,13 +36,16 @@ class Sign extends Component {
     this.state = {
       departures: departures,
       parkingSpaces: 36,
+      name: 'Melhus skysstasjon',
+      type: 'train',
     };
   }
   render() {
     return (
       <div className={styles.page}>
         <div className={styles.sign}>
-          <Header /><ParkInfo parkingSpaces={this.state.parkingSpaces}/>
+          <Header name={this.state.name} type={this.state.type}/>
+          <ParkInfo parkingSpaces={this.state.parkingSpaces}/>
           <DepartureInfo departures={this.state.departures}/>
         </div>
         <footer className={styles.footer}>
