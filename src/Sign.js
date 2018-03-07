@@ -23,7 +23,7 @@ const departures = [
   {
     type: 'train',
     time: 11,
-    line: 'L',
+    line: 'NSB',
     destination: 'Trondheim S',
     id: 345,
   },
