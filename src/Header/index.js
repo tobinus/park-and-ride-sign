@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Header.css';
 import busstation from './busstasjon.gif';
 import trainstation from './togterminal.gif';
 
@@ -12,8 +13,8 @@ export default function Header({type, name}) {
     throw new Error('Header cannot recognize type ' + type);
   }
 
-  return <header>
-    <img src={symbol} alt="Busstasjon" />
-    {name}
+  return <header className={styles.header}>
+    <img src={symbol} alt="Busstasjon" className={styles.symbol}/>
+    <span className={styles.name}>{name}</span>
   </header>;
 }
