@@ -35,9 +35,9 @@ class Sign extends Component {
     super(props);
     this.state = {
       departures: departures,
-      parkingSpaces: 9,
+      parkingSpaces: 11,
       name: 'Melhus skysstasjon',
-      type: 'train',
+      type: 'bus',
     };
   }
   render() {

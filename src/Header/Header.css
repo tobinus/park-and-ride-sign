@@ -1,6 +1,7 @@
 .header {
     width: 100%;
     padding: 1em;
+    background-color: white;
 
     display: flex;
     align-items: flex-start;
