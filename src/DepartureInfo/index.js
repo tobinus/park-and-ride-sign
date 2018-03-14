@@ -14,6 +14,10 @@ export default function DepartureInfo({departures}) {
   );
 
   return <main className={styles.list}>
-    {departureList}
+    <table className={styles.table}>
+      <tbody>
+        {departureList}
+      </tbody>
+    </table>
   </main>
 }
