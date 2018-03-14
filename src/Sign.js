@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Sign.css';
 import Header from './Header';
-import ParkInfo from './ParkInfo';
 import DepartureInfo from './DepartureInfo';
 import Attributions from './Attributions';
 

@@ -4,3 +4,8 @@
     background-color: black;
     color: #FFD339;
 }
+
+.table {
+    border: none;
+    border-collapse: collapse;
+}

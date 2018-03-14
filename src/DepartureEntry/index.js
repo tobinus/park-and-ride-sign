@@ -1,7 +1,7 @@
 import React from 'react';
 
-import trainIcon from './train.gif';
-import busIcon from './bus.gif';
+import trainIcon from './train.png';
+import busIcon from './bus.png';
 
 import styles from './DepartureEntry.css';
 
@@ -15,21 +15,21 @@ export default function DepartureEntry({type, time, line, destination, className
     throw new Error('Unknown DepartureEntry type ' + type);
   }
 
-  return <div className={className}>
-    <span className={styles.icon}>
+  return <tr className={className}>
+    <td className={styles.icon}>
       <img src={icon} alt={type}/>
-    </span>
+    </td>
 
-    <span className={styles.linenumber}>
+    <td className={styles.linenumber}>
       {line}
-    </span>
+    </td>
 
-    <span className={styles.destination}>
+    <td className={styles.destination}>
       {destination}
-    </span>
+    </td>
 
-    <span className={styles.time}>
+    <td className={styles.time}>
       {time} min
-    </span>
-  </div>;
+    </td>
+  </tr>;
 }

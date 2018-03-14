@@ -1,19 +1,27 @@
 .entry {
-    /* TODO */
+    width: 100%;
 }
 
 .icon {
-    /* TODO */
+    width: 10%;
+}
+
+.icon img {
+    width: 100%;
+    vertical-align: sub;
 }
 
 .linenumber {
-    /* TODO */
+    text-align: right;
+    width: 10%;
 }
 
 .destination {
-    /* TODO */
+    width: 60%;
+    padding-left: 0.7em;
 }
 
 .time {
-    /* TODO */
+    text-align: right;
+    width: 20%;
 }
