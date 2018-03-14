@@ -11,7 +11,7 @@ export default function Header({type, name, parkingSpaces}) {
   } else if (type === 'bus') {
     symbol = busstation;
   } else {
-    symbol = null;
+    throw new Error('Header cannot recognize type ' + type);
   }
 
   return <header className={styles.header}>
