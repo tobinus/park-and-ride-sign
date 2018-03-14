@@ -26,6 +26,13 @@ const departures = [
     destination: 'Trondheim S',
     id: 345,
   },
+  {
+    type: 'bus',
+    time: 15,
+    line: 36,
+    destination: 'Sentrum',
+    id: 472,
+  },
 ];
 
 
