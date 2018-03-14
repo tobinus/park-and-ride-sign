@@ -32,12 +32,9 @@ const departures = [
 class Sign extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      departures: departures,
-      parkingSpaces: 11,
-      name: 'Melhus skysstasjon',
-      type: 'bus',
-    };
+    this.state = {};
+    this.timerId = null;
+    this.interval = 60 * 1000;  // One minute
   }
   render() {
     return (
@@ -51,6 +48,27 @@ class Sign extends Component {
         </footer>
       </div>
     );
+  }
+
+  componentDidMount() {
+    this.updateWithServerInfo();
+    this.timerId = setInterval(() => this.updateWithServerInfo(), this.interval);
+  }
+
+  componentWillUnmount() {
+    if (this.timerId !== null) {
+      clearInterval(this.timerId);
+    }
+  }
+
+  updateWithServerInfo() {
+    // TODO: Fetch information from server, and update state from promise
+    this.setState({
+      departures: departures,
+      parkingSpaces: 11,
+      name: 'Melhus skysstasjon',
+      type: 'bus',
+    });
   }
 }
 

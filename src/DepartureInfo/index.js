@@ -3,7 +3,8 @@ import styles from './DepartureInfo.css';
 import DepartureEntry from '../DepartureEntry';
 
 export default function DepartureInfo({departures}) {
-  const departureList = departures.map(({type, time, line, destination, id}) =>
+  const maybeDepartures = departures ? departures : [];
+  const departureList = maybeDepartures.map(({type, time, line, destination, id}) =>
     <DepartureEntry
       type={type}
       time={time}
